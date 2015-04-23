@@ -15,4 +15,5 @@
 hs_err_pid*
 revenge-core.iml
 .idea
+.gradle
 build

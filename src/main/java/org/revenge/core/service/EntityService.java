@@ -40,9 +40,8 @@ public class EntityService {
 
     public List<Entity> get(String name) throws IllegalAccessException {
         List<Entity> entities = new ArrayList<>();
-        name = ".*" + name + ".*";
         TitanTransaction titanTransaction = titanGraph.newTransaction();
-        TitanGraphQuery searchResults = titanTransaction.query().has("name", Text.CONTAINS_REGEX, name);
+        TitanGraphQuery searchResults = titanTransaction.query().has("name", Text.CONTAINS_PREFIX, name);
         Iterable<Vertex> vertices = searchResults.vertices();
         for (Vertex vertex : vertices) {
             entities.add(entityVertexMapper.toObject(vertex, new Entity()));

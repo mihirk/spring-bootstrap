@@ -28,8 +28,8 @@ public class EntityServiceTest {
         entityService.create(new Entity("Dinesh Kumar"));
         entityService.create(new Entity("Kalpesh Kumar"));
         entityService.create(new Entity("Ramesh Singh"));
-        List<Entity> searchResults = entityService.get("esh");
-        assertEquals(6, searchResults.size());
-        entityService.deleteAll();
+        List<Entity> searchResults = entityService.get("Ramesh");
+        assertEquals(2, searchResults.size());
+//        entityService.deleteAll();
     }
 }
