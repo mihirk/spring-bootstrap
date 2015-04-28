@@ -1,4 +1,4 @@
-package org.revenge.core;
+package org.revenge.search;
 
 
 import org.springframework.stereotype.Component;

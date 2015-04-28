@@ -1,7 +1,7 @@
-package org.revenge.core.web;
+package org.revenge.search.web;
 
-import org.revenge.core.model.Entity;
-import org.revenge.core.service.EntityService;
+import org.revenge.search.model.Entity;
+import org.revenge.search.service.EntityService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
