@@ -1,4 +1,4 @@
-package org.revenge.core;
+package org.revenge.search;
 
 import com.thinkaurelius.titan.core.PropertyKey;
 import com.thinkaurelius.titan.core.TitanFactory;
@@ -12,9 +12,9 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-public class RevengeCoreConfiguration {
+public class RevengeSearchConfiguration {
     @Autowired
-    private RevengeCoreProperties applicationProperties;
+    private RevengeSearchProperties applicationProperties;
 
     @Bean
     public TitanGraph titanGraph() {
