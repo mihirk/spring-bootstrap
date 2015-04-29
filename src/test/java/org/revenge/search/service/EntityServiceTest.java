@@ -9,8 +9,6 @@ import org.springframework.boot.test.IntegrationTest;
 import org.springframework.boot.test.SpringApplicationConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
 import java.util.List;
 import java.util.UUID;
 
@@ -47,16 +45,5 @@ public class EntityServiceTest {
         entityService.create(entity4);
         List<Entity> results = entityService.search("Ram");
         assertEquals(4, results.size());
-    }
-
-
-    @Test
-    public void testName() throws Exception {
-        BufferedReader bufferedReader = new BufferedReader(new FileReader("/usr/share/dict/words"));
-        String currentLine = null;
-        while ((currentLine = bufferedReader.readLine()) != null) {
-            entityService.create(new Entity(currentLine, UUID.randomUUID().toString()));
-        }
-        bufferedReader.close();
     }
 }
