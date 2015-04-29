@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 @PropertySource("classpath:application.properties")
-public class DatabaseProperties {
+public class RevengeSearchProperties {
     @Value("${db.host}")
     private String databaseHost;
 

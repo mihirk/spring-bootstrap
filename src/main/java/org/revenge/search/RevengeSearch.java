@@ -8,8 +8,8 @@ import org.springframework.boot.context.web.SpringBootServletInitializer;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Import;
 
-@Import(DatabaseConfiguration.class)
-@ComponentScan({"org.revenge.search"})
+@Import(RevengeSearchConfiguration.class)
+@ComponentScan("org.revenge.core")
 @SpringBootApplication
 public class RevengeSearch extends SpringBootServletInitializer {
     @Override
