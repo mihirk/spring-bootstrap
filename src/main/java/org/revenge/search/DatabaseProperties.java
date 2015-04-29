@@ -7,17 +7,10 @@ import org.springframework.stereotype.Component;
 @Component("databaseProperties")
 @PropertySource("classpath:database.properties")
 public class DatabaseProperties {
-    @Value("${host}")
-    private String host;
+    @Value("${index}")
+    private String index;
 
-    @Value("${port}")
-    private Integer port;
-
-    public String getHost() {
-        return host;
-    }
-
-    public Integer getPort() {
-        return port;
+    public String getIndex() {
+        return index;
     }
 }

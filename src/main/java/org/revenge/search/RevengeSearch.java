@@ -8,7 +8,7 @@ import org.springframework.boot.context.web.SpringBootServletInitializer;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Import;
 
-@Import(org.revenge.search.DatabaseConfiguration.class)
+@Import({DatabaseConfiguration.class, ServletConfiguration.class})
 @ComponentScan("org.revenge.search")
 @SpringBootApplication
 public class RevengeSearch extends SpringBootServletInitializer {
