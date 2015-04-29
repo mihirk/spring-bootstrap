@@ -1,4 +1,4 @@
-package org.revenge.search.model;
+package org.revenge.core.model;
 
 public class Entity {
     private String name;

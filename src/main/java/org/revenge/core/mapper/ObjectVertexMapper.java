@@ -1,4 +1,4 @@
-package org.revenge.search.mapper;
+package org.revenge.core.mapper;
 
 import com.tinkerpop.blueprints.Vertex;
 

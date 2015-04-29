@@ -1,4 +1,4 @@
-package org.revenge.search;
+package org.revenge.core;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.PropertySource;
@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 @PropertySource("classpath:application.properties")
-public class RevengeSearchProperties {
+public class RevengeCoreProperties {
     @Value("${titan.config}")
     private String titanConfig;
 

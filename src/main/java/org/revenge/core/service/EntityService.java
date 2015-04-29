@@ -1,12 +1,12 @@
-package org.revenge.search.service;
+package org.revenge.core.service;
 
 import com.thinkaurelius.titan.core.TitanGraph;
 import com.thinkaurelius.titan.core.TitanGraphQuery;
 import com.thinkaurelius.titan.core.TitanTransaction;
 import com.thinkaurelius.titan.core.attribute.Text;
 import com.tinkerpop.blueprints.Vertex;
-import org.revenge.search.mapper.ObjectVertexMapper;
-import org.revenge.search.model.Entity;
+import org.revenge.core.mapper.ObjectVertexMapper;
+import org.revenge.core.model.Entity;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.stereotype.Service;

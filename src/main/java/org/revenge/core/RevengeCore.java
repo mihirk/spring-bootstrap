@@ -1,4 +1,4 @@
-package org.revenge.search;
+package org.revenge.core;
 
 
 import org.springframework.boot.SpringApplication;
@@ -8,16 +8,16 @@ import org.springframework.boot.context.web.SpringBootServletInitializer;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Import;
 
-@Import(RevengeSearchConfiguration.class)
+@Import(RevengeCoreConfiguration.class)
 @ComponentScan("org.revenge.core")
 @SpringBootApplication
-public class RevengeSearch extends SpringBootServletInitializer {
+public class RevengeCore extends SpringBootServletInitializer {
     @Override
     protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
-        return application.sources(RevengeSearch.class);
+        return application.sources(RevengeCore.class);
     }
 
     public static void main(String[] args) {
-        SpringApplication.run(RevengeSearch.class, args);
+        SpringApplication.run(RevengeCore.class, args);
     }
 }

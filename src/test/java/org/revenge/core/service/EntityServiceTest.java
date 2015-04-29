@@ -1,9 +1,9 @@
-package org.revenge.search.service;
+package org.revenge.core.service;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.revenge.search.RevengeSearch;
-import org.revenge.search.model.Entity;
+import org.revenge.core.RevengeCore;
+import org.revenge.core.model.Entity;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.IntegrationTest;
 import org.springframework.boot.test.SpringApplicationConfiguration;
@@ -14,7 +14,7 @@ import java.util.List;
 import static org.junit.Assert.assertEquals;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@SpringApplicationConfiguration(classes = RevengeSearch.class)
+@SpringApplicationConfiguration(classes = RevengeCore.class)
 @IntegrationTest
 public class EntityServiceTest {
     @Autowired
