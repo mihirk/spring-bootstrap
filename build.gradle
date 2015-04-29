@@ -25,10 +25,11 @@ allprojects {
 
     dependencies {
         compile('org.springframework.boot:spring-boot-starter-web')
+        compile("com.aerospike:aerospike-client:3.+")
+        compile("org.luaj:luaj-jse:3.0")
         compile('org.springframework.boot:spring-boot-starter-tomcat')
         compile('javax.servlet:javax.servlet-api:3.1.0')
         compile('javax.servlet:jsp-api:2.0')
-        compile("com.aerospike:aerospike-client:3.+")
         testCompile('org.springframework.boot:spring-boot-starter-test')
         testCompile group: 'junit', name: 'junit', version: '4.11'
     }

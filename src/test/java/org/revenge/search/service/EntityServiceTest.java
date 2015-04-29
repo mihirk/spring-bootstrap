@@ -1,35 +1,25 @@
 package org.revenge.search.service;
 
+import com.aerospike.client.Bin;
+import com.aerospike.client.Key;
 import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.revenge.search.RevengeSearch;
-import org.revenge.search.model.Entity;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.IntegrationTest;
-import org.springframework.boot.test.SpringApplicationConfiguration;
-import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-import java.util.List;
-
-import static org.junit.Assert.assertEquals;
-
-@RunWith(SpringJUnit4ClassRunner.class)
-@SpringApplicationConfiguration(classes = RevengeSearch.class)
-@IntegrationTest
 public class EntityServiceTest {
-    @Autowired
-    private EntityService entityService;
-
     @Test
     public void testName() throws Exception {
-        entityService.create(new Entity("Ramesh Kumar"));
-        entityService.create(new Entity("Suresh Kumar"));
-        entityService.create(new Entity("Mahesh Kumar"));
-        entityService.create(new Entity("Dinesh Kumar"));
-        entityService.create(new Entity("Kalpesh Kumar"));
-        entityService.create(new Entity("Ramesh Singh"));
-        List<Entity> searchResults = entityService.get("Ramesh");
-        assertEquals(2, searchResults.size());
-//        entityService.deleteAll();
+        Key key = new Key("test", "demo", "putgetkey");
+        Bin bin1 = new Bin("bin1", "value1");
+        Bin bin2 = new Bin("bin2", "value2");
+
+// Write a record
+//        dbClient.put(null, key, bin1, bin2);
+//
+//// Read a record
+//        Record record = dbClient.get(null, key);
+//
+//        System.out.println(record);
+//
+//        dbClient.close();
+
     }
 }
