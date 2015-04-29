@@ -7,17 +7,10 @@ import org.springframework.stereotype.Component;
 @Component
 @PropertySource("classpath:application.properties")
 public class RevengeSearchProperties {
-    @Value("${db.host}")
-    private String databaseHost;
+    @Value("${titan.config}")
+    private String titanConfig;
 
-    @Value("${db.port}")
-    private Integer databasePort;
-
-    public String getDatabaseHost() {
-        return databaseHost;
-    }
-
-    public Integer getDatabasePort() {
-        return databasePort;
+    public String getTitanConfig() {
+        return "/" + titanConfig;
     }
 }
