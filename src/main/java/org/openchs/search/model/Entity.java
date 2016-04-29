@@ -1,4 +1,4 @@
-package org.revenge.search.model;
+package org.openchs.search.model;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;

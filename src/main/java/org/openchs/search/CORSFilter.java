@@ -1,4 +1,4 @@
-package org.revenge.search;
+package org.openchs.search;
 
 
 import org.springframework.stereotype.Component;

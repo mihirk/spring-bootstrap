@@ -1,4 +1,4 @@
-package org.revenge.search.service;
+package org.openchs.search.service;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.elasticsearch.action.index.IndexRequest;
@@ -9,8 +9,8 @@ import org.elasticsearch.client.Client;
 import org.elasticsearch.index.query.LimitFilterBuilder;
 import org.elasticsearch.index.query.MatchQueryBuilder;
 import org.elasticsearch.search.SearchHit;
-import org.revenge.search.DatabaseProperties;
-import org.revenge.search.model.Entity;
+import org.openchs.search.DatabaseProperties;
+import org.openchs.search.model.Entity;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

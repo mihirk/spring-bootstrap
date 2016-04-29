@@ -1,4 +1,4 @@
-package org.revenge.search;
+package org.openchs.search;
 
 import org.elasticsearch.client.Client;
 import org.elasticsearch.node.Node;

@@ -1,2 +1,2 @@
-docker build -t registry.giantswarm.io/mihirkh/search ./
-docker push registry.giantswarm.io/mihirkh/search
+docker build -t openchs/server ./
+docker push openchs/server

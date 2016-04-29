@@ -1,7 +1,7 @@
-package org.revenge.search.web;
+package org.openchs.search.web;
 
-import org.revenge.search.model.Entity;
-import org.revenge.search.service.EntityService;
+import org.openchs.search.model.Entity;
+import org.openchs.search.service.EntityService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;

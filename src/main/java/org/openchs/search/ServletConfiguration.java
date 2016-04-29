@@ -1,4 +1,4 @@
-package org.revenge.search;
+package org.openchs.search;
 
 import org.apache.catalina.connector.Connector;
 import org.apache.coyote.http11.AbstractHttp11Protocol;
